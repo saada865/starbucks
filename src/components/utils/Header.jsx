@@ -1,22 +1,29 @@
 import React from "react";
 import Logo from "../assets/logo.jpg";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="px-10 py-5">
+    <div className="px-10 py-5  w-full">
       <div className="flex flex-row justify-between items-center ">
         <div className="flex flex-row gap-x-7 items-center">
           <img src={Logo} alt="" className="h-14 w-14 rounded-full" />
           <ul className="flex flex-row space-x-7">
             <a href="">
-              <li className=" font-bold text-sm tracking-widest">MENU</li>
+              <li className=" font-bold text-sm tracking-widest">
+                <Link>MENU</Link>
+              </li>
             </a>
             <a href="">
-              <li className="font-bold text-sm tracking-widest">REWARDS</li>
+              <li className="font-bold text-sm tracking-widest">
+                <Link to="/">REWARDS</Link>
+              </li>
             </a>
             <a href="">
-              <li className="font-bold text-sm tracking-widest">GIFT CARDS</li>
+              <li className="font-bold text-sm tracking-widest">
+                <Link to="/gift">GIFT CARDS</Link>
+              </li>
             </a>
           </ul>
         </div>
