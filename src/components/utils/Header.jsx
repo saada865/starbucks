@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="px-10 py-5  w-full">
-      <div className="flex flex-row justify-between items-center ">
+    <div className="  w-full">
+      <div className=" px-10 py-5 flex flex-row justify-between items-center ">
         <div className="flex flex-row gap-x-7 items-center">
           <img src={Logo} alt="" className="h-14 w-14 rounded-full" />
           <ul className="flex flex-row space-x-7">
@@ -48,6 +48,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <hr className=" shadow-gray-200 shadow-sm" />
     </div>
   );
 };
