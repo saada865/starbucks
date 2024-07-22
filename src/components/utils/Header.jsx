@@ -12,7 +12,7 @@ const Header = () => {
           <ul className="flex flex-row space-x-7">
             <a href="">
               <li className=" font-bold text-sm tracking-widest">
-                <Link>MENU</Link>
+                <Link to="/menu">MENU</Link>
               </li>
             </a>
             <a href="">
